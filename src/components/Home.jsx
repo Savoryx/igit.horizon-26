@@ -1,13 +1,11 @@
 import React from "react";
-import Navbar from "./Navbar.jsx";
 
 function Home() {
   return (
     // min-h-0 is a flexbox fix that prevents children from expanding parents
     <section className=" px-0 py-0 w-full overflow-x-hidden bg-black min-h-0">
-        {/* <div className="pt-4">
-            <Navbar />
-        </div> */}
+        <div className="pt-0">
+        </div>
       <picture className="block w-full overflow-x-hidden">
         <source
           media="(min-width: 1024px)"
