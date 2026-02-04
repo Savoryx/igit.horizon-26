@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <nav className="fixed top-2 left-0 w-full z-50 transition-all duration-300">
       <div className="w-full h-14 md:h-18 px-6 md:px-12 flex items-center justify-between
-                      bg-transparent md:bg-white/5 shadow-lg md:rounded-full md:backdrop-blur-sm md:border-b md:border-white/10 md:shadow-lg">
+                      bg-transparent md:bg-white/5 md:rounded-full md:backdrop-blur-sm md:border-b md:border-white/10 md:shadow-lg">
 
         {/* Left Logo (Hidden on Mobile) */}
         <div className="flex-shrink-0 hidden md:block">

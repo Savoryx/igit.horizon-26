@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home.jsx";
 import Navbar from "./components/Navbar.jsx";
+import EventPage from "./pages/EventPage.jsx";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/events' element={<EventPage />} />
         </Routes>
       </div>
     </Router>
