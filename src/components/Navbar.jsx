@@ -12,15 +12,20 @@ function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 transition-all duration-300">
-      <div className="w-full h-20 px-6 md:px-12 flex items-center justify-between
-                      bg-white/5 backdrop-blur-md border-b border-white/10 shadow-lg">
+    <nav className="fixed top-2 left-0 w-full z-50 transition-all duration-300">
+      <div className="w-full h-14 md:h-18 px-6 md:px-12 flex items-center justify-between
+                      bg-transparent md:bg-white/5 md:rounded-full md:backdrop-blur-sm md:border-b md:border-white/10 md:shadow-lg">
 
-        {/* Left Logo Placeholder */}
-        <div className="flex-shrink-0">
-          <div className="h-10 w-24 bg-white/20 rounded-md animate-pulse flex items-center justify-center text-xs text-white/50">
-            Logo Left
+        {/* Left Logo (Hidden on Mobile) */}
+        <div className="flex-shrink-0 hidden md:block">
+          <div className="h-7 w-16 bg-white/20 rounded-md animate-pulse flex items-center justify-center text-xs text-white/50">
+            <img src="https://res.cloudinary.com/ddpdocy8k/image/upload/v1770139420/Asset_4_4x_2_ly7wkb.png" alt="" />
           </div>
+        </div>
+
+        {/* Right Logo (Visible on Mobile - acting as Left Logo in flex) */}
+        <div className="w-16 md:hidden flex-shrink-0 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+          <img className="h-10 w-auto" src="https://res.cloudinary.com/ddpdocy8k/image/upload/v1770139373/IGIT-Conference-2021-removebg-SOLID_COLOR_hfwzdd.png" alt="" />
         </div>
 
         {/* Desktop Navigation */}
@@ -37,16 +42,16 @@ function Navbar() {
           ))}
         </div>
 
-        {/* Right Logo Placeholder */}
+        {/* Right Logo (Desktop) */}
         <div className="hidden md:block flex-shrink-0">
-          <div className="h-10 w-24 bg-white/20 rounded-md animate-pulse flex items-center justify-center text-xs text-white/50">
-            Logo Right
+          <div className="h-7 w-12 bg-transparent rounded-md animate-pulse flex items-center justify-center text-xs text-shadow-blue-50">
+            <img src="https://res.cloudinary.com/ddpdocy8k/image/upload/v1770139373/IGIT-Conference-2021-removebg-SOLID_COLOR_hfwzdd.png" alt="" />
           </div>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white p-2"
+          className="md:hidden text-white p-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
           onClick={() => setIsOpen(!isOpen)}
         >
           <div className="w-6 h-5 flex flex-col justify-between">

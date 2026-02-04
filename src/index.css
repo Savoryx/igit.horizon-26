@@ -17,6 +17,11 @@ body,
 body {
     position: relative;
     overscroll-behavior-x: none;
+    font-family: "The Seasons";
+}
+
+* {
+    font-family: "The Seasons", serif, system-ui;
 }
 
 img,
@@ -26,4 +31,25 @@ canvas,
 svg {
     display: block;
     max-width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+.animate-scroll {
+    animation: scroll 40s linear infinite;
+    will-change: transform;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.pause-on-hover:hover .animate-scroll {
+    animation-play-state: paused;
 }
