@@ -7,9 +7,10 @@ import Footer from "./Footer";
 
 function Home() {
   React.useEffect(() => {
+
     const duration = 15 * 1000;
     const animationEnd = Date.now() + duration;
-    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 50 };
     let interval;
     let startTimeout; // Declare startTimeout here
 
