@@ -14,11 +14,11 @@ function Navbar() {
   return (
     <nav className="fixed top-2 left-0 w-full z-50 transition-all duration-300">
       <div className="w-full h-14 md:h-18 px-6 md:px-12 flex items-center justify-between
-                      bg-transparent md:bg-white/5 md:rounded-full md:backdrop-blur-sm md:border-b md:border-white/10 md:shadow-lg">
+                      bg-transparent md:bg-white/5 shadow-lg md:rounded-full md:backdrop-blur-sm md:border-b md:border-white/10 md:shadow-lg">
 
         {/* Left Logo (Hidden on Mobile) */}
         <div className="flex-shrink-0 hidden md:block">
-          <div className="h-7 w-16 bg-white/20 rounded-md animate-pulse flex items-center justify-center text-xs text-white/50">
+          <div className="h-7 w-16 bg-transparent rounded-md flex items-center justify-center text-xs text-white/50">
             <img src="https://res.cloudinary.com/ddpdocy8k/image/upload/v1770139420/Asset_4_4x_2_ly7wkb.png" alt="" />
           </div>
         </div>
@@ -44,7 +44,7 @@ function Navbar() {
 
         {/* Right Logo (Desktop) */}
         <div className="hidden md:block flex-shrink-0">
-          <div className="h-7 w-12 bg-transparent rounded-md animate-pulse flex items-center justify-center text-xs text-shadow-blue-50">
+          <div className="h-7 w-16 bg-transparent rounded-md flex items-center justify-center text-xs text-shadow-blue-50">
             <img src="https://res.cloudinary.com/ddpdocy8k/image/upload/v1770139373/IGIT-Conference-2021-removebg-SOLID_COLOR_hfwzdd.png" alt="" />
           </div>
         </div>

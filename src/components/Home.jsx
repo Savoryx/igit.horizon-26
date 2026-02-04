@@ -3,6 +3,7 @@ import confetti from "canvas-confetti";
 import Sponsors from "./Sponsors";
 import Events from "./Events";
 import Merch from "./Merch";
+import Footer from "./Footer";
 
 function Home() {
   React.useEffect(() => {
@@ -71,6 +72,7 @@ function Home() {
       <Sponsors />
       <Events />
       <Merch />
+      <Footer />
     </div>
   );
 }
