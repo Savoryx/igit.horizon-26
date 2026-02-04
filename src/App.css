@@ -1,13 +1,30 @@
 @import "tailwindcss";
 
-html, body {
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-  background-color: black;
 }
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  overscroll-behavior-x: none;
+}
+
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
